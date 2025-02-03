@@ -1,0 +1,1 @@
+This project is a practice application built to enhance my skills in front-end development using React, TypeScript, and modern web development practices. It showcases my ability to build reusable components, manage state, handle forms, and connect to a backend, among other skills.
