@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
+import { ChakraProvider, defaultSystem, Color } from "@chakra-ui/react";
 import { ThemeProvider } from "next-themes";
 import "./index.css";
 
