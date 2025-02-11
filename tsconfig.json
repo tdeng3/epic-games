@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "useDefineForClassFields": true,
@@ -17,9 +16,14 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "types": ["@chakra-ui/react", "react", "react-dom"],
-    "baseUrl": ".",
+    // Fix baseUrl to point to src directory
+    "baseUrl": "./src",
     "paths": {
-      "@chakra-ui/react": ["./node_modules/@chakra-ui/react"]
+      // Keep existing Chakra UI path
+      "@chakra-ui/react": ["./node_modules/@chakra-ui/react"],
+      // Add these path aliases
+      "services/*": ["services/*"],
+      "@components/*": ["components/*"]
     }
   },
   "include": ["src"],
