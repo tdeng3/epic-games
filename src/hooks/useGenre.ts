@@ -3,11 +3,7 @@ import useData from "./useData";
 interface Genre {
     id: number;
     name: string;
-}
-
-interface FectchGenresResponse {
-    cound: number;
-    results: Genre[];
+    image_background:string;
 }
 
 const useGenre = () => useData<Genre>('/genres')
