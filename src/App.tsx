@@ -7,6 +7,7 @@ import { Genre } from "hooks/useGenre";
 import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
+import { MdPadding } from "react-icons/md";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -25,13 +26,11 @@ function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "200px 1fr",
+        lg: "250px 1fr",
       }}
     >
       <GridItem area="nav">
-        <HStack>
-          <NavBar />
-        </HStack>
+        <NavBar />
       </GridItem>
       <Stack hideBelow="lg">
         <GridItem area="aside" paddingX={5}>
