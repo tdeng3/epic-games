@@ -1,10 +1,4 @@
-Here's a **VS Code-friendly README.md** version with enhanced code snippet formatting and IDE-specific tips:
-
-```markdown
-# Epic Games Store Clone
-
-[Live Demo](https://epic-games-taupe.vercel.app/)
-```
+### [Live Demo](https://epic-games-taupe.vercel.app/)
 
 ## 🛠 Development Setup (VS Code Recommended)
 
