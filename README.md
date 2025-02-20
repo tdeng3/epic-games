@@ -1,4 +1,6 @@
-### [Live Demo](https://epic-games-taupe.vercel.app/)
+# Epic Games Store Clone
+
+[Live Demo](https://epic-games-taupe.vercel.app/)
 
 ## 🛠 Development Setup (VS Code Recommended)
 
@@ -16,8 +18,6 @@ Id: christian-kohler.chakra-ui-snippets
 Name: ESLint
 Id: dbaeumer.vscode-eslint
 ```
-
-````
 
 ### Project Structure
 
@@ -94,12 +94,19 @@ REACT_APP_API_BASE_URL=your_api_endpoint
 }
 ```
 
-Key VS Code-specific enhancements:
+## 📄 License
 
+MIT Licensed - See [LICENSE](LICENSE) for details
+
+```
+
+Key VS Code-specific enhancements:
 1. Added IDE configuration recommendations
 2. Terminal command formatting
 3. File structure visualization
 4. MermaidJS deployment diagram
 5. Extension installation guidance
 6. VS Code settings snippet
-````
+
+Would you like me to add any specific VS Code debugging configurations or additional IDE integration details?
+```
