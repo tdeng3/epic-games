@@ -93,20 +93,3 @@ REACT_APP_API_BASE_URL=your_api_endpoint
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
-
-## 📄 License
-
-MIT Licensed - See [LICENSE](LICENSE) for details
-
-```
-
-Key VS Code-specific enhancements:
-1. Added IDE configuration recommendations
-2. Terminal command formatting
-3. File structure visualization
-4. MermaidJS deployment diagram
-5. Extension installation guidance
-6. VS Code settings snippet
-
-Would you like me to add any specific VS Code debugging configurations or additional IDE integration details?
-```
