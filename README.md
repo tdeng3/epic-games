@@ -1,12 +1,10 @@
 Here's a **VS Code-friendly README.md** version with enhanced code snippet formatting and IDE-specific tips:
 
-````markdown
+```markdown
 # Epic Games Store Clone
 
-![Project Preview](public/preview.jpg) <!-- Replace with actual path -->
-
-[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS_Code-007ACC?style=flat&logo=visual-studio-code)](your-vscode-dev-container-url) <!-- Optional -->
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://epic-games-taupe.vercel.app/)
+[Live Demo] https://epic-games-taupe.vercel.app/
+```
 
 ## 🛠 Development Setup (VS Code Recommended)
 
@@ -24,6 +22,7 @@ Id: christian-kohler.chakra-ui-snippets
 Name: ESLint
 Id: dbaeumer.vscode-eslint
 ```
+
 ````
 
 ### Project Structure
@@ -109,3 +108,4 @@ Key VS Code-specific enhancements:
 4. MermaidJS deployment diagram
 5. Extension installation guidance
 6. VS Code settings snippet
+````
