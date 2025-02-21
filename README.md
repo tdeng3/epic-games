@@ -1,10 +1,10 @@
 # Epic Games Store Clone
 
-[Open in VS Code](https://vscode.dev/github/yourusername/repo-name)
-[Live Demo](https://epic-games-taupe.vercel.app/)
-[Powered by RAWG](https://rawg.io)
+[![Open in VS Code](https://img.shields.io/static/v1?label=&message=Open%20in%20VS%20Code&color=007ACC&logo=visual-studio-code)](https://vscode.dev/github/yourusername/repo-name)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://epic-games-taupe.vercel.app/)
+[![Powered by RAWG](https://img.shields.io/badge/Powered%20by-RAWG-ff6b6b?style=flat)](https://rawg.io)
 
-[Epic Games Clone Preview](public/preview.jpg)
+![Epic Games Clone Preview](public/preview.jpg)
 
 ## 🎯 Educational Purpose
 
@@ -35,8 +35,6 @@
   ]
 }
 ```
-
-````
 
 ### Project Structure (VS Code Explorer View)
 
@@ -160,4 +158,3 @@ MIT Licensed - See [LICENSE](LICENSE) for details
 7. Environment variable template
 8. Explorer-friendly directory structure
 ```
-````
