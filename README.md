@@ -1,99 +1,162 @@
+````markdown
 # Epic Games Store Clone
 
+[Open in VS Code](https://vscode.dev/github/yourusername/repo-name)
 [Live Demo](https://epic-games-taupe.vercel.app/)
+[Powered by RAWG](https://rawg.io)
 
-## 🛠 Development Setup (VS Code Recommended)
+[Epic Games Clone Preview](public/preview.jpg)
+
+## 🎯 Educational Purpose
+
+**Ctrl+Click to jump to sections** (VS Code feature)
+
+▶️ **This is a learning project demonstrating:**
+
+- RESTful API integration patterns
+- React+TypeScript best practices
+- Chakra UI theming
+- Professional workflow with Vercel
+
+❌ **Not associated with Epic Games**  
+⚠️ **No commercial use intended**
+
+## 🖥 VS Code Setup
 
 ### Recommended Extensions
 
-Install these VS Code extensions for optimal development:
-
-```bash
-Name: ES7+ React/Redux/React-Native snippets
-Id: dsznajder.es7-react-js-snippets
-
-Name: Chakra UI Snippets
-Id: christian-kohler.chakra-ui-snippets
-
-Name: ESLint
-Id: dbaeumer.vscode-eslint
+```json
+// .vscode/extensions.json
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "christian-kohler.chakra-ui-snippets",
+    "graphql.vscode-graphql"
+  ]
+}
 ```
+````
 
-### Project Structure
+### Project Structure (VS Code Explorer View)
 
 ```bash
 📦src
-├─ 🗂️ api          # API service configuration
-├─ 🗂️ components  # Reusable UI components
-├─ 🗂️ hooks       # Custom React hooks
-├─ 🗀 styles       # Global CSS/Chakra config
-└─ 🗀 types        # TypeScript type definitions
+├─ 📂api           # RAWG API handlers
+├─ 📂components    # Chakra-based UI
+├─ 📂hooks         # useLocalStorage, useGames
+├─ 📂types         # TypeScript interfaces
+└─ 📂styles        # CSS-in-JS configs
 ```
 
-## 🚀 Quick Start
+## ⚙️ API Configuration
 
-1. Clone repo & open in VS Code:
+```typescript
+// src/api/client.ts
+const API_KEY = process.env.REACT_APP_RAWG_KEY;
 
-```bash
-git clone https://github.com/yourusername/epic-games-clone.git && code epic-games-clone
+export default axios.create({
+  baseURL: "https://api.rawg.io/api",
+  params: {
+    key: API_KEY, // Add your key in .env
+  },
+});
 ```
 
-2. Install dependencies:
+**Environment Setup** (VS Code .env template):
 
-```bash
-npm install
+```ini
+# .env.local
+REACT_APP_RAWG_KEY=your_api_key_here
+REACT_APP_ENV=development
 ```
 
-3. Start dev server (VS Code terminal):
+## 🚀 Development Workflow
 
-```bash
-npm run dev
+1. **Open in VS Code**
+
+   ```bash
+   code .
+   ```
+
+2. **Install Dependencies** (Integrated Terminal)
+
+   ```bash
+   npm install
+   ```
+
+3. **Run Dev Server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **VS Code Scripts** (Cmd+Shift+P → "Run Task")
+   ```json
+   // .vscode/tasks.json
+   {
+     "label": "Start Dev Server",
+     "command": "npm run dev"
+   }
+   ```
+
+## 📚 API Documentation
+
+Integrated RAWG API docs in VS Code:
+
+1. Press `F1` → "Open Link"
+2. Paste: `https://api.rawg.io/docs/`
+
+![API IntelliSense Preview](public/api-intellisense.gif)
+
+## ⚠️ Legal Disclaimer
+
+```diff
+- This project uses game data from RAWG.io for educational
+- purposes only. All trademarks/copyrights belong to their
+- respective owners. No affiliation with Epic Games.
 ```
 
-## 🔍 Code Quality
-
-Configured for VS Code's built-in tools:
-
-- `.eslintrc` - TypeScript/React linting rules
-- `.prettierrc` - Consistent code formatting
-- `jsconfig.json` - Improved IntelliSense
-
-## 🌐 Deployment
+## 🔗 Deployment Pipeline
 
 ```mermaid
 graph LR
   A[VS Code] --> B[Git Commit]
   B --> C[Push to GitHub]
   C --> D[Vercel Auto-Deploy]
+  D --> E[Live Demo]
 ```
 
-## 📋 Key Features
-
-| Category         | Technologies Used         |
-| ---------------- | ------------------------- |
-| Core Framework   | React.js + TypeScript     |
-| Styling          | Chakra UI + CSS Modules   |
-| State Management | Custom Hooks + useContext |
-| API Handling     | RESTful API Integration   |
-
-## ⚠️ Important Notes
-
-1. Add `.env` file for API endpoints:
-
-```env
-REACT_APP_API_BASE_URL=your_api_endpoint
-```
-
-2. Enable VS Code auto-format on save:
+## 🛠 Debug Configuration
 
 ```json
-// .vscode/settings.json
+// .vscode/launch.json
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "configurations": [
+    {
+      "name": "Chrome Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src"
+    }
+  ]
 }
 ```
 
-## API
+## 📜 License
 
-[Click here](https://api.rawg.io/docs/)
+MIT Licensed - See [LICENSE](LICENSE) for details
+
+```
+
+**VS Code-Specific Features Included:**
+1. Native code navigation with `Ctrl+Click`
+2. Integrated task runner configurations
+3. Extension recommendations file
+4. Chrome debug setup
+5. Mermaid diagram support
+6. JSON schema validation
+7. Environment variable template
+8. Explorer-friendly directory structure
+```
