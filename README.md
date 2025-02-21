@@ -1,4 +1,3 @@
-````markdown
 # Epic Games Store Clone
 
 [Open in VS Code](https://vscode.dev/github/yourusername/repo-name)
@@ -36,6 +35,7 @@
   ]
 }
 ```
+
 ````
 
 ### Project Structure (VS Code Explorer View)
@@ -160,3 +160,4 @@ MIT Licensed - See [LICENSE](LICENSE) for details
 7. Environment variable template
 8. Explorer-friendly directory structure
 ```
+````
