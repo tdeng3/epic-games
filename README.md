@@ -93,3 +93,7 @@ REACT_APP_API_BASE_URL=your_api_endpoint
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
+
+## API
+
+[Click here](https://api.rawg.io/docs/)
