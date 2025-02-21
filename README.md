@@ -4,8 +4,6 @@
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://epic-games-taupe.vercel.app/)
 [![Powered by RAWG](https://img.shields.io/badge/Powered%20by-RAWG-ff6b6b?style=flat)](https://rawg.io)
 
-![Epic Games Clone Preview](public/preview.jpg)
-
 ## 🎯 Educational Purpose
 
 **Ctrl+Click to jump to sections** (VS Code feature)
@@ -146,9 +144,9 @@ graph LR
 
 MIT Licensed - See [LICENSE](LICENSE) for details
 
-```
-
 **VS Code-Specific Features Included:**
+
+```
 1. Native code navigation with `Ctrl+Click`
 2. Integrated task runner configurations
 3. Extension recommendations file
