@@ -108,9 +108,9 @@ Integrated RAWG API docs in VS Code:
 ## ⚠️ Legal Disclaimer
 
 ```diff
-- This project uses game data from RAWG.io for educational
-- purposes only. All trademarks/copyrights belong to their
-- respective owners. No affiliation with Epic Games.
+This project uses game data from RAWG.io for educational
+purposes only. All trademarks/copyrights belong to their
+respective owners. No affiliation with Epic Games.
 ```
 
 ## 🔗 Deployment Pipeline
